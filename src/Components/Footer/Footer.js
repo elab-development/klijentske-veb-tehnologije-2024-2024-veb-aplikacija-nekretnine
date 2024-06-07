@@ -25,7 +25,9 @@ const Footer = () => {
             <Link style={{ textDecoration: "none" }} to={"/properties"}>
               <h3>Properties</h3>
             </Link>
-
+            <Link style={{ textDecoration: "none" }} to={"/favorites"}>
+              <h3>Favorites</h3>
+            </Link>
             <Link style={{ textDecoration: "none" }} to={"/contact"}>
               <h3>Contact</h3>
             </Link>

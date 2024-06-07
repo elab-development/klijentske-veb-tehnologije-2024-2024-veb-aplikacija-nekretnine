@@ -61,6 +61,9 @@ const Nav = () => {
         <Link style={{ textDecoration: "none" }} to={"/properties"}>
           <h2>Properties</h2>
         </Link>
+        <Link style={{ textDecoration: "none" }} to={"/favorites"}>
+          <h2>Favorites</h2>
+        </Link>
         <Link style={{ textDecoration: "none" }} to={"/contact"}>
           <h2>Contact</h2>
         </Link>
