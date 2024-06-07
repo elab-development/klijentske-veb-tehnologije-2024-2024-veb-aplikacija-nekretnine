@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Nav from "./Components/Nav/Nav";
@@ -7,10 +8,11 @@ import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Pages/Contact/Contact";
 import Auth from "./Auth/Auth";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
 import { auth } from "./Firebase";
 import { login } from "./Components/Features/userSlice";
 import Favorites from "./Components/Pages/Favorites/Favorites";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,6 +21,7 @@ function App() {
 
   const user = useSelector((store) => store.user.user);
   const dispatch = useDispatch();
+
   console.log(user);
 
   useEffect(() => {
@@ -42,6 +45,7 @@ function App() {
       }
     });
   }, []);
+
   return (
     <div className="App">
       <Nav />
@@ -52,6 +56,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/auth" element={<Auth />} />
       </Routes>
+      <ToastContainer position="bottom-left" />
       <Footer />
     </div>
   );
