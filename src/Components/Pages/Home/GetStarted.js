@@ -6,7 +6,7 @@ const GetStarted = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h1>Započnite sa Homyzom</h1>
+        <h1>Započnite sa VBB ESTATE-om</h1>
         <p>
           Pretplatite se i pronađite vrlo atraktivne ponude cena kod nas.
           Pronađite svoj dom uskoro.

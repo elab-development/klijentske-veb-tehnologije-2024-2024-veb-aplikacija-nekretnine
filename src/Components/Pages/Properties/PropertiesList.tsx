@@ -53,7 +53,7 @@ class PropertiesList extends Component<{}, PropertiesListState> {
           <div className="inputBox">
             <input
               type="search"
-              placeholder="Search by title/ city/ address..."
+              placeholder="Search..."
               value={searchQuery}
               onChange={this.handleSearchChange}
             />

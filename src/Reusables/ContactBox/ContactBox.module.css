@@ -7,6 +7,12 @@
   border: 1px solid #ededed;
   width: 100%;
   padding: 20px;
+  transition: 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .iconTitleBox {

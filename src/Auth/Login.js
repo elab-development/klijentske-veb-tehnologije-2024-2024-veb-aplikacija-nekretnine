@@ -53,7 +53,7 @@ const Login = ({ setToggleRegistration }) => {
   return (
     <div className={styles.container}>
       <div className={styles.logoTitleBox}>
-        <img src={logo} alt=""></img>
+        <img className={styles.logo} src={logo} alt="logo"></img>
       </div>
       <div className={styles.inputBox}>
         <input
