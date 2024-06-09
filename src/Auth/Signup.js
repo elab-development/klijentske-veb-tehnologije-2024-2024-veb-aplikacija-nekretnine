@@ -101,16 +101,16 @@ const Signup = ({ setToggleRegistration }) => {
             setUsernameToLongError(false);
           }}
           type="text"
-          placeholder="Username"
+          placeholder="Korisničko Ime"
         ></input>
         {usernameToLongError && (
-          <p className={styles.errorText}>
-            Username should not be more than 8 characters.
-          </p>
+          <h6 className={styles.errorText}>
+            Korisničko ne sme biti duži od 8 karaktera.
+          </h6>
         )}
         {usernameError ? (
           <h6 className={styles.errorText}>
-            Username should be at lest 6 characters.
+            Korisničko ime mora imati minimum 6 karaktera.
           </h6>
         ) : (
           ""
@@ -126,15 +126,15 @@ const Signup = ({ setToggleRegistration }) => {
             setEmailError(false);
           }}
           type="text"
-          placeholder="Email"
+          placeholder="E-mail"
         ></input>
         {emailError ? (
-          <h6 className={styles.errorText}>Email is not valid.</h6>
+          <h6 className={styles.errorText}>Email nije validan.</h6>
         ) : (
           ""
         )}
         {emailAlredyExistError ? (
-          <h6 className={styles.errorText}>Email already exists.</h6>
+          <h6 className={styles.errorText}>Email već postoji.</h6>
         ) : (
           ""
         )}
@@ -145,24 +145,24 @@ const Signup = ({ setToggleRegistration }) => {
             setPasswordLengthErr(false);
           }}
           type="password"
-          placeholder="Password"
+          placeholder="Šifra"
         ></input>
         {passwordLengthErr ? (
           <h6 className={styles.errorText}>
-            Password should be at least 6 characters.
+            Šifra mora imati minimum 6 karaktera.
           </h6>
         ) : (
           ""
         )}
       </div>
-      <button onClick={signUp}>Continue</button>
+      <button onClick={signUp}>Nastavite</button>
       <p>
-        Already have an account?{" "}
+        Već imate nalog?{" "}
         <span
           onClick={() => setToggleRegistration(true)}
           className={styles.span}
         >
-          Sign in
+          Prijavite se
         </span>
       </p>
     </div>

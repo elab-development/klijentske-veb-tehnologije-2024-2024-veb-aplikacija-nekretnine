@@ -66,10 +66,10 @@ const Login = ({ setToggleRegistration }) => {
             setUserCredentialError(false);
           }}
           type="text"
-          placeholder="Email"
+          placeholder="E-mail"
         ></input>
         {emailError ? (
-          <h6 className={styles.errorText}>Email is not valid.</h6>
+          <h6 className={styles.errorText}>Email nije validan.</h6>
         ) : (
           ""
         )}
@@ -85,29 +85,29 @@ const Login = ({ setToggleRegistration }) => {
             setUserCredentialError(false);
           }}
           type="password"
-          placeholder="Password"
+          placeholder="Šifra"
         ></input>
         {passwordLengthErr ? (
           <h6 className={styles.errorText}>
-            Password should be at least 6 characters.
+            Šifra mora imati minimum 6 karaktera.
           </h6>
         ) : (
           ""
         )}
         {userCredentialError ? (
-          <h6 className={styles.errorText}>Invalid credentials.</h6>
+          <h6 className={styles.errorText}>Netačni podaci.</h6>
         ) : (
           ""
         )}
       </div>
-      <button onClick={login}>Continue</button>
+      <button onClick={login}>Nastavite</button>
       <p>
-        Don't have an account?{" "}
+        Nemate nalog?{" "}
         <span
           onClick={() => setToggleRegistration(false)}
           className={styles.span}
         >
-          Sign up
+          Registrujte se
         </span>
       </p>
     </div>
