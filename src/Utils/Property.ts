@@ -16,4 +16,5 @@ export interface Property {
   bathroom: number;
   latitude: number;
   longitude: number;
+  description: string;
 }

@@ -17,6 +17,8 @@ export const listData: Property[] = [
     city: "London",
     latitude: 51.5074,
     longitude: -0.1278,
+    description:
+      "Predivan stan idealan za ljubitelje plaže. Nalazi se u mirnom kraju Londona pored reke Temze. Stan ima prostran dnevni boravak sa velikim prozorima koji pružaju prelep pogled na reku. Moderan dizajn kuhinje i kupatila doprinosi udobnosti. Stan je blizu brojnih restorana i prodavnica, što čini život ovde veoma praktičnim i ugodnim.",
   },
   {
     id: 2,
@@ -34,6 +36,8 @@ export const listData: Property[] = [
     city: "London",
     latitude: 52.4862,
     longitude: -1.8904,
+    description:
+      "Prostran stan u blizini Regent's Parka. Ovaj moderan stan nudi izvanredne poglede na park i okolne delove Londona. Velike sobe sa modernim nameštajem čine ga idealnim za porodice ili ljude koji vole prostrane stanove. Stan ima modernu kuhinju opremljenu svim potrebnim aparaturama. Blizina parka pruža mogućnosti za opuštajuće šetnje i rekreaciju, dok su brojni kafići i prodavnice u blizini.",
   },
   {
     id: 3,
@@ -51,6 +55,8 @@ export const listData: Property[] = [
     city: "London",
     latitude: 53.4808,
     longitude: -2.2426,
+    description:
+      "Ovaj moderni stan je savršen za pojedince ili parove koji traže udoban život u centru Londona. Stan je nedavno renoviran i opremljen novim nameštajem i aparatima. Otvarajući se na prelepi pogled na grad, ovaj stan nudi praktičan i moderan životni prostor. Blizina trgovina, restorana i kulturnih atrakcija čini ga savršenim izborom za one koji vole živahan gradski život.",
   },
   {
     id: 4,
@@ -68,6 +74,8 @@ export const listData: Property[] = [
     city: "London",
     latitude: 53.8008,
     longitude: -1.5491,
+    description:
+      "Prostran i sunčan stan smešten u srcu Londona. Ovaj stan ima veliki dnevni boravak sa pristupom terasi sa koje se pruža prelep pogled na grad. Moderan dizajn kuhinje i kupatila sa visokokvalitetnim materijalima čine ovaj stan veoma atraktivnim. Blizina metro stanice i autobuskih linija olakšava svakodnevne aktivnosti i putovanja po gradu.",
   },
   {
     id: 5,
@@ -85,6 +93,8 @@ export const listData: Property[] = [
     city: "Brighton",
     latitude: 50.8225,
     longitude: -0.1372,
+    description:
+      "Ovaj luksuzni stan na obali u Brightenu nudi neverovatan pogled na more. Prostrane sobe sa elegantnim nameštajem i modernom opremom čine ovaj stan idealnim za one koji traže luksuzan život na obali. Stan ima veliki balkon sa pogledom na more, idealan za opuštanje i uživanje u zalasku sunca. Blizina plaža, restorana i šetališta čini ovu nekretninu jedinstvenom u svom životnom stilu.",
   },
   {
     id: 6,
@@ -102,6 +112,8 @@ export const listData: Property[] = [
     city: "Manchester",
     latitude: 53.4808,
     longitude: -2.2426,
+    description:
+      "Ovaj moderan stan u srcu Mančestera nudi savremen životni prostor u blizini svih važnih gradskih atrakcija. Stan je opremljen najnovijom tehnologijom i visokokvalitetnim materijalima. Veliki prozori donose obilje prirodnog svetla, dok otvoren koncept dnevnog boravka i kuhinje stvara prostran i udoban ambijent za život. Blizina trgovina, restorana i kulturnih dešavanja čini ovaj stan idealnim izborom za urbani život u Manchesteru.",
   },
   {
     id: 7,
@@ -119,6 +131,8 @@ export const listData: Property[] = [
     city: "Birmingham",
     latitude: 52.4862,
     longitude: -1.8904,
+    description:
+      "Udoban stan u mirnom delu Birmingema sa prelepim pogledom na vrt. Ovaj stan je savršen za one koji traže privatnost i miran život. Veliki dnevni boravak sa izlazom na terasu i vrt pruža idealno mesto za opuštanje i uživanje u prirodi. Moderan dizajn kupatila i kuhinje čine ovaj stan udobnim i praktičnim za svakodnevni život. Blizina parkova i škola čini ga idealnim za porodice sa decom.",
   },
   {
     id: 8,
@@ -136,6 +150,8 @@ export const listData: Property[] = [
     city: "Edinburgh",
     latitude: 55.9533,
     longitude: -3.1883,
+    description:
+      "Prostran stan u mirnom delu Edinburga, idealan za porodični život. Ovaj stan ima velike sobe sa dovoljno prostora za sve članove porodice. Prostrani dnevni boravak sa prozorima koje su otvorene prema prelepom pogledu na okolinu. Moderan dizajn kuhinje i kupatila sa visokokvalitetnim materijalima čine ovaj stan udobnim i praktičnim za svakodnevni život. Blizina škola i prodavnica čini ga savršenim izborom za porodice koje vole miran život.",
   },
   {
     id: 9,
@@ -153,6 +169,8 @@ export const listData: Property[] = [
     city: "Glasgow",
     latitude: 55.8642,
     longitude: -4.2518,
+    description:
+      "Šarmantan stan u srcu Glasgova sa prelepim pogledom sa balkona. Ovaj stan je savršen za parove ili pojedince koji cene udobnost i stil. Prostrani dnevni boravak sa pristupom balkonu omogućava opuštajuće večeri i jutarnje kafe sa pogledom na grad. Moderan dizajn kuhinje i kupatila sa visokokvalitetnim aparaturama čine ovaj stan idealnim izborom za urbani život u Glasgowu.",
   },
   {
     id: 10,
@@ -170,6 +188,8 @@ export const listData: Property[] = [
     city: "Edinburgh",
     latitude: 55.9508,
     longitude: -3.191,
+    description:
+      "Elegantan stan u srcu Edinburga, smešten u istorijskoj zgradi. Ovaj stan odiše istorijskim šarmom i karakterom, sa modernim sadržajima za udoban život. Velike sobe sa visokim plafonima i originalnim detaljima stvaraju poseban osećaj prostora. Blizina istorijskih spomenika i kulturnih institucija čini ovu nekretninu idealnom za ljubitelje istorije i kulture.",
   },
   {
     id: 11,
@@ -187,6 +207,8 @@ export const listData: Property[] = [
     city: "London",
     latitude: 51.5155,
     longitude: -0.0916,
+    description:
+      "Luksuzni penthouse u centru Londona sa spektakularnim pogledom na grad. Ova ekskluzivna nekretnina nudi najviši nivo udobnosti i luksuza. Prostrane sobe sa modernim nameštajem i vrhunskim materijalima čine ovaj penthouse idealnim izborom za one koji traže ekskluzivan životni prostor. Velike terase sa pogledom na London pružaju nezaboravne trenutke i mogućnosti za druženje i zabavu.",
   },
   {
     id: 12,
@@ -204,6 +226,8 @@ export const listData: Property[] = [
     city: "London",
     latitude: 51.5171,
     longitude: -0.1062,
+    description:
+      "Moderan loft u srcu Londona, sa impresivnim pogledom na grad. Ovaj stan kombinuje industrijski šik sa savremenim dizajnom, stvarajući jedinstven životni prostor. Veliki prozori nude obilje prirodnog svetla, dok otvoreni plan dnevnog boravka i kuhinje stvara prostran i moderno opremljen prostor. Blizina trgovina, restorana i kulturnih dešavanja čini ovaj loft savršenim izborom za one koji traže moderan život u srcu grada.",
   },
   {
     id: 14,
@@ -221,6 +245,8 @@ export const listData: Property[] = [
     city: "Birmingham",
     latitude: 52.4832,
     longitude: -1.8931,
+    description:
+      "Udoban studio u srcu Birmingema, sa blizinom svih ključnih gradskih sadržaja. Ovaj studio je savršen za pojedince koji cene praktičnost i žive u srcu živopisnog grada. Moderna kuhinja i kupatilo sa svim neophodnim sadržajima čine ovaj studio funkcionalnim i udobnim. Blizina kafića, prodavnica i javnog prevoza čini ovu nekretninu idealnom za urbani način života.",
   },
   {
     id: 15,
@@ -238,51 +264,94 @@ export const listData: Property[] = [
     city: "Leeds",
     latitude: 53.7997,
     longitude: -1.5492,
+    description:
+      "Šarmantna vikendica u mirnom predgrađu Lidsa, idealna za porodični život. Ova vikendica ima prostrane sobe i veliki dnevni boravak sa kaminom, stvarajući toplu i udobnu atmosferu. Veliki vrt i terasa pružaju dodatni prostor za zabavu i relaksaciju. Blizina škola, parkova i prodavnica čini ovu vikendicu savršenim izborom za porodice koje traže miran život u prirodi.",
   },
-
+  {
+    id: 16,
+    title: "Povoljan stan sa modernim sadržajima",
+    img: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    bedroom: 2,
+    bathroom: 1,
+    price: 950,
+    address: {
+      street: "45 Elm Street",
+      city: "Cardiff",
+      state: "Cardiff",
+      zip: "23456",
+    },
+    city: "Cardiff",
+    latitude: 51.4816,
+    longitude: -3.1791,
+    description:
+      "Povoljan stan u srcu Kardifa, sa blizinom svih važnih gradskih sadržaja. Ovaj moderan stan ima prostran dnevni boravak sa modernim nameštajem i praktičnom kuhinjom. Veliki prozori obezbeđuju obilje prirodnog svetla, dok udobne sobe čine ovaj stan idealnim za mlade parove ili pojedince. Blizina prodavnica, restorana i kulturnih dešavanja čini ovaj stan savršenim izborom za urbani život.",
+  },
+  {
+    id: 17,
+    title: "Ekskluzivna vila sa bazenom",
+    img: "https://images.pexels.com/photos/276695/pexels-photo-276695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    bedroom: 5,
+    bathroom: 4,
+    price: 7000,
+    address: {
+      street: "1 Riverside Drive",
+      city: "London",
+      state: "London",
+      zip: "89012",
+    },
+    city: "London",
+    latitude: 51.4992,
+    longitude: -0.2291,
+    description:
+      "Ekskluzivna vila u prestižnom delu Londona, sa privatnim bazenom i prelepim vrtom. Ova luksuzna vila nudi najviši nivo komfora i privatnosti. Prostrani dnevni boravak sa visokim plafonima i klasičnim dizajnom stvara luksuznu atmosferu za druženje i zabavu. Velike terase i vrt sa bazenom pružaju izvanredan prostor za opuštanje i uživanje na otvorenom. Blizina škola i međunarodnih institucija čini ovu vilu idealnom za porodice i ljubitelje luksuza.",
+  },
   {
     id: 18,
-    title: "Urban stan sa pogledom na grad",
-    img: "https://images.pexels.com/photos/3567082/pexels-photo-3567082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    bedroom: 2,
-    bathroom: 2,
-    price: 2200,
+    title: "Šik studio sa prelepim pogledom",
+    img: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    bedroom: 1,
+    bathroom: 1,
+    price: 1100,
     address: {
-      street: "789 Downtown Street",
-      city: "Birmingham",
-      state: "Birmingham",
-      zip: "90123",
-    },
-    city: "Birmingham",
-    latitude: 52.4862,
-    longitude: -1.8904,
-  },
-  {
-    id: 19,
-    title: "Vila pored plaže",
-    img: "https://images.pexels.com/photos/2360665/pexels-photo-2360665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    bedroom: 4,
-    bathroom: 3,
-    price: 4500,
-    address: {
-      street: "456 Ocean Drive",
+      street: "23 Harbour View",
       city: "Brighton",
       state: "Brighton",
-      zip: "23456",
+      zip: "12345",
     },
     city: "Brighton",
     latitude: 50.8225,
     longitude: -0.1372,
+    description:
+      "Šik studio u srcu Brightona sa prelepim pogledom na more. Ovaj studio kombinuje moderni dizajn sa praktičnim sadržajima za udoban boravak. Veliki prozori omogućavaju spektakularne poglede na obalu, dok otvoreni plan dnevnog boravka i kuhinje stvara prostran i moderan prostor. Blizina plaža, restorana i kulturnih dešavanja čini ovaj studio idealnim izborom za one koji traže život na obali.",
+  },
+  {
+    id: 19,
+    title: "Praktičan stan u blizini parka",
+    img: "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    bedroom: 2,
+    bathroom: 1,
+    price: 850,
+    address: {
+      street: "87 Green Avenue",
+      city: "Manchester",
+      state: "Manchester",
+      zip: "23456",
+    },
+    city: "Manchester",
+    latitude: 53.4808,
+    longitude: -2.2426,
+    description:
+      "Praktičan stan u blizini Heaton Parka, idealan za porodični život. Ovaj moderan stan ima prostrane sobe i svetao dnevni boravak sa pogledom na park. Funkcionalna kuhinja sa svim potrebnim aparatima čini svakodnevni život lakšim i udobnijim. Blizina škola, prodavnica i javnog prevoza čini ovaj stan idealnim izborom za porodice koje vole živopisan gradski život.",
   },
   {
     id: 20,
-    title: "Udoban loft sa modernim sadržajima",
-    img: "https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    bedroom: 1,
-    bathroom: 1,
-    price: 1400,
+    title: "Elegantna kuća sa bazenom",
+    img: "https://images.pexels.com/photos/276692/pexels-photo-276692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    bedroom: 4,
+    bathroom: 3,
+    price: 6000,
     address: {
-      street: "234 Loft Lane",
+      street: "456 Hillside Road",
       city: "Edinburgh",
       state: "Edinburgh",
       zip: "56789",
@@ -290,57 +359,27 @@ export const listData: Property[] = [
     city: "Edinburgh",
     latitude: 55.9533,
     longitude: -3.1883,
+    description:
+      "Elegantna kuća u mirnom delu Edinburga, sa privatnim bazenom i prelepim vrtom. Ova kuća odiše elegancijom i stilom, sa prostranim dnevnim boravkom i modernim dizajnom. Velike terase sa pogledom na vrt i bazen pružaju savršen prostor za zabavu i opuštanje na otvorenom. Blizina škola i parkova čini ovu kuću idealnom za porodice koje traže luksuzan život u prirodi.",
   },
   {
     id: 21,
-    title: "Prostrana porodična kuća",
-    img: "https://images.pexels.com/photos/259950/pexels-photo-259950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    bedroom: 5,
-    bathroom: 3,
-    price: 3500,
+    title: "Predivna vikendica pored jezera",
+    img: "https://images.pexels.com/photos/2031038/pexels-photo-2031038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    bedroom: 2,
+    bathroom: 1,
+    price: 1400,
     address: {
-      street: "123 Family Street",
-      city: "Manchester",
-      state: "Manchester",
+      street: "789 Lakeview Drive",
+      city: "Lake District",
+      state: "Lake District",
       zip: "67890",
     },
-    city: "Manchester",
-    latitude: 53.483959,
-    longitude: -2.244644,
-  },
-  {
-    id: 22,
-    title: "Moderan stan sa teretanom",
-    img: "https://images.pexels.com/photos/1571456/pexels-photo-1571456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    bedroom: 2,
-    bathroom: 2,
-    price: 1900,
-    address: {
-      street: "789 Fitness Avenue",
-      city: "Glasgow",
-      state: "Glasgow",
-      zip: "90123",
-    },
-    city: "Glasgow",
-    latitude: 55.8642,
-    longitude: -4.2518,
-  },
-  {
-    id: 23,
-    title: "Luksuzni penthouse u centru grada",
-    img: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    bedroom: 3,
-    bathroom: 3,
-    price: 5000,
-    address: {
-      street: "321 Central Road",
-      city: "London",
-      state: "London",
-      zip: "34567",
-    },
-    city: "London",
-    latitude: 51.5074,
-    longitude: -0.1278,
+    city: "Lake District",
+    latitude: 54.4609,
+    longitude: -3.0886,
+    description:
+      "Predivna vikendica sa pogledom na jezero u nacionalnom parku Lake District. Ova vikendica nudi mir i privatnost, sa udobnim dnevnim boravkom i prostranim dvorištem. Velike sobe sa rustičnim nameštajem čine ovu vikendicu idealnom za odmor i beg od svakodnevnog života. Blizina jezera i planinskih staza pruža mogućnosti za istraživanje prirode i aktivnosti na otvorenom.",
   },
 ];
 
