@@ -61,6 +61,9 @@ const Nav = () => {
         <Link style={{ textDecoration: "none" }} to={"/properties"}>
           <h2>Nekretnine</h2>
         </Link>
+        <Link style={{ textDecoration: "none" }} to={"/bookings"}>
+          <h2>Rezervacije</h2>
+        </Link>
         <Link style={{ textDecoration: "none" }} to={"/favorites"}>
           <h2>Omiljene</h2>
         </Link>
