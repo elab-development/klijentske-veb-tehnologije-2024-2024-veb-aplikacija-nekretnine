@@ -8,8 +8,10 @@ import {
   addToFavorites,
   removeFromFavorites,
 } from "../../Components/Features/userSlice";
+import { useNavigate } from "react-router-dom";
 
 const Card = ({ item }) => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const favorites = useSelector((state) => state.user.favorites);
 
@@ -17,7 +19,9 @@ const Card = ({ item }) => {
     (favoriteItem) => favoriteItem.id === item.id
   );
 
-  const handleFavoriteClick = () => {
+  const handleFavoriteClick = (e) => {
+    e.stopPropagation(); // Prevent event propagation to avoid navigation
+
     if (isFavorite) {
       dispatch(removeFromFavorites(item));
       toast.error(`${item.title} removed from favorites!`);
@@ -27,14 +31,19 @@ const Card = ({ item }) => {
     }
   };
 
+  const handleCardClick = () => {
+    // Navigate to property details page and pass item object as state
+    navigate(`/properties/${item.id}`, { state: { item } });
+  };
+
   return (
-    <div className={styles.container}>
+    <div onClick={handleCardClick} className={styles.container}>
       <FontAwesomeIcon
         onClick={handleFavoriteClick}
         className={`${styles.icon} ${isFavorite ? styles.favorited : ""}`}
         icon={faHeart}
       />
-      <img src={item.img} alt=""></img>
+      <img src={item.img} alt="" />
       <p>{item.price} $</p>
       <h3>{item.title}</h3>
     </div>
