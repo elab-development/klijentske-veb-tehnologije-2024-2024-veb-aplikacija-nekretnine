@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: fit-content;
+  background-color: #131110;
+  padding: 200px 100px;
+}
+
+.container h2 {
+  margin-bottom: 50px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 60px;
+  height: fit-content;
+}

@@ -20,19 +20,18 @@ const Card = ({ item }) => {
   );
 
   const handleFavoriteClick = (e) => {
-    e.stopPropagation(); // Prevent event propagation to avoid navigation
+    e.stopPropagation();
 
     if (isFavorite) {
       dispatch(removeFromFavorites(item));
-      toast.error(`${item.title} removed from favorites!`);
+      toast.error(`${item.title} uklonjeno iz Omiljenih!`);
     } else {
       dispatch(addToFavorites(item));
-      toast.success(`${item.title} added to favorites!`);
+      toast.success(`${item.title} dodato u Omiljene!`);
     }
   };
 
   const handleCardClick = () => {
-    // Navigate to property details page and pass item object as state
     navigate(`/properties/${item.id}`, { state: { item } });
   };
 

@@ -21,10 +21,8 @@ function App() {
 
   const location = useLocation();
 
-  const user = useSelector((store) => store.user.user);
+  // const user = useSelector((store) => store.user.user);
   const dispatch = useDispatch();
-
-  console.log(user);
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -4,6 +4,7 @@ const initialState = {
   user: null,
   isLoading: false,
   favorites: [],
+  bookings: [],
 };
 
 export const userSlice = createSlice({
@@ -16,6 +17,7 @@ export const userSlice = createSlice({
     logout: (state) => {
       state.user = null;
       state.favorites = [];
+      state.bookings = [];
     },
     addToFavorites: (state, action) => {
       const item = action.payload;
@@ -30,9 +32,26 @@ export const userSlice = createSlice({
         (favoriteItem) => favoriteItem.id !== action.payload.id
       );
     },
+    addToBookings: (state, action) => {
+      const item = action.payload;
+      if (!state.bookings.some((bookingItem) => bookingItem.id === item.id)) {
+        state.bookings.push(item);
+      }
+    },
+    removeFromBookings: (state, action) => {
+      state.bookings = state.bookings.filter(
+        (bookingItem) => bookingItem.id !== action.payload.id
+      );
+    },
   },
 });
 
 export default userSlice.reducer;
-export const { login, logout, addToFavorites, removeFromFavorites } =
-  userSlice.actions;
+export const {
+  login,
+  logout,
+  addToFavorites,
+  removeFromFavorites,
+  addToBookings,
+  removeFromBookings,
+} = userSlice.actions;

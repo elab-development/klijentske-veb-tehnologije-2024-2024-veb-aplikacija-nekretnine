@@ -4,14 +4,11 @@
   width: 100%;
   padding: 100px 200px;
   gap: 25px;
+  background-color: #131110;
 }
 
 .container img {
   border-radius: 10px;
-}
-
-.container h2 {
-  color: #1f3e72;
 }
 
 .lBox {
@@ -19,9 +16,9 @@
 }
 
 .lBox p {
-  color: #8c9abc;
   font-size: 13px;
   line-height: 17px;
+  font-style: italic;
 }
 
 .lBox button {
@@ -50,18 +47,14 @@
   padding-left: 20px;
 }
 
-.roomsBox h6 {
-  color: #1f3e72;
-}
-
 .iconTextBox {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.iconTextBox {
-  color: #1f3e72;
+.icon {
+  color: #2c4dcd;
 }
 
 .modalBackdrop {
