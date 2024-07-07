@@ -1,10 +1,10 @@
 import React from "react";
 import PropertiesList from "./PropertiesList";
 
-const Properties = () => {
+const Properties = ({ setAuthModule }) => {
   return (
     <div>
-      <PropertiesList />
+      <PropertiesList setAuthModule={setAuthModule} />
     </div>
   );
 };

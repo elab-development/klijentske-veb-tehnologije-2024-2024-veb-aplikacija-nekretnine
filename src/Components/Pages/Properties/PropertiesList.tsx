@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import "./Properties.css";
 import { listData } from "../../../Data/DummyData";
-// @ts-ignore
 import Card from "../../../Reusables/Card/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import PropertyHelper from "../../../Utils/PropertyHelper";
 import { Property } from "../../../Utils/Property";
+
+interface PropertiesListProps {
+  setAuthModule: (module: string) => void;
+}
 
 interface PropertiesListState {
   searchQuery: string;
@@ -14,13 +17,16 @@ interface PropertiesListState {
   displayedCount: number;
 }
 
-class PropertiesList extends Component<{}, PropertiesListState> {
-  constructor(props: {}) {
+class PropertiesList extends Component<
+  PropertiesListProps,
+  PropertiesListState
+> {
+  constructor(props: PropertiesListProps) {
     super(props);
     this.state = {
       searchQuery: "",
       filteredData: listData,
-      displayedCount: 10, // Initial number of items to display
+      displayedCount: 10,
     };
   }
 
@@ -32,18 +38,19 @@ class PropertiesList extends Component<{}, PropertiesListState> {
 
   handleLoadMore = () => {
     this.setState((prevState) => ({
-      displayedCount: prevState.displayedCount + 10, // Increase the displayed count by 10
+      displayedCount: prevState.displayedCount + 10,
     }));
   };
 
   handleLoadLess = () => {
     this.setState((prevState) => ({
-      displayedCount: Math.max(prevState.displayedCount - 10, 10), // Decrease the displayed count by 10 but not less than the initial count
+      displayedCount: Math.max(prevState.displayedCount - 10, 10),
     }));
   };
 
   render() {
     const { searchQuery, filteredData, displayedCount } = this.state;
+    const { setAuthModule } = this.props;
     const dataToDisplay = filteredData.slice(0, displayedCount);
 
     return (
@@ -62,7 +69,7 @@ class PropertiesList extends Component<{}, PropertiesListState> {
 
         <div className="propertiesList">
           {dataToDisplay.map((item) => (
-            <Card key={item.id} item={item} />
+            <Card key={item.id} item={item} setAuthModule={setAuthModule} />
           ))}
         </div>
 

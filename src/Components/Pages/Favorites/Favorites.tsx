@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./Favorites.css";
-// @ts-ignore
 import Card from "../../../Reusables/Card/Card";
 import PropertyHelper from "../../../Utils/PropertyHelper";
 import { Property } from "../../../Utils/Property";
 
 interface FavoritesProps {
   favorites: Property[];
+  setAuthModule: (module: string) => void;
 }
 
 class Favorites extends Component<FavoritesProps> {
   render() {
-    const { favorites } = this.props;
+    const { favorites, setAuthModule } = this.props;
 
     return (
       <div className="container">
@@ -27,6 +27,7 @@ class Favorites extends Component<FavoritesProps> {
                   formattedPrice: PropertyHelper.formatPrice(item.price),
                   formattedAddress: PropertyHelper.formatAddress(item.address),
                 }}
+                setAuthModule={setAuthModule}
               />
             ))
           ) : (

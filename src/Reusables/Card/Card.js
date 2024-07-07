@@ -10,10 +10,11 @@ import {
 } from "../../Components/Features/userSlice";
 import { useNavigate } from "react-router-dom";
 
-const Card = ({ item }) => {
+const Card = ({ item, setAuthModule }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const favorites = useSelector((state) => state.user.favorites);
+  const user = useSelector((state) => state.user.user);
 
   const isFavorite = favorites.some(
     (favoriteItem) => favoriteItem.id === item.id
@@ -22,12 +23,16 @@ const Card = ({ item }) => {
   const handleFavoriteClick = (e) => {
     e.stopPropagation();
 
-    if (isFavorite) {
-      dispatch(removeFromFavorites(item));
-      toast.error(`${item.title} uklonjeno iz Omiljenih!`);
+    if (user) {
+      if (isFavorite) {
+        dispatch(removeFromFavorites(item));
+        toast.error(`${item.title} uklonjeno iz Omiljenih!`);
+      } else {
+        dispatch(addToFavorites(item));
+        toast.success(`${item.title} dodato u Omiljene!`);
+      }
     } else {
-      dispatch(addToFavorites(item));
-      toast.success(`${item.title} dodato u Omiljene!`);
+      setAuthModule(true);
     }
   };
 

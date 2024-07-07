@@ -9,10 +9,12 @@
 
 .container img {
   border-radius: 10px;
+  height: 620px;
+  object-fit: cover;
 }
 
 .lBox {
-  width: 50%;
+  width: 60%;
 }
 
 .lBox p {

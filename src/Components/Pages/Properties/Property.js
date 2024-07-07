@@ -10,10 +10,11 @@ import "react-toastify/dist/ReactToastify.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addToBookings, removeFromBookings } from "../../Features/userSlice";
 
-const Property = () => {
+const Property = ({ setAuthModule }) => {
   const location = useLocation();
   const dispatch = useDispatch();
   const bookings = useSelector((state) => state.user.bookings);
+  const user = useSelector((state) => state.user.user);
   const navigate = useNavigate();
   const { item } = location.state || {};
   const [showDatePicker, setShowDatePicker] = useState(false);
@@ -21,25 +22,12 @@ const Property = () => {
   const [endDate, setEndDate] = useState(null);
   const today = new Date();
 
-  console.log(bookings);
-
   if (!item) {
     return <div>Loading...</div>;
   }
 
   const isBooked = bookings.some((bookingItem) => bookingItem.id === item.id);
 
-  // const handleBookingClicked = (e) => {
-  //   e.stopPropagation();
-
-  //   if (isFavorite) {
-  //     dispatch(removeFromBookings(item));
-  //     toast.error(`${item.title} uklonjeno iz Rezervacija!`);
-  //   } else {
-  //     dispatch(addToBookings(item));
-  //     toast.success(`${item.title} dodato u Rezervacije!`);
-  //   }
-  // };
   const handleRemoveBooking = () => {
     dispatch(removeFromBookings(item));
     setEndDate(false);
@@ -68,6 +56,14 @@ const Property = () => {
       setShowDatePicker(false);
     } else {
       toast.error("Molimo vas izaberite datume.");
+    }
+  };
+
+  const handleBookingClick = () => {
+    if (user) {
+      setShowDatePicker(true);
+    } else {
+      setAuthModule(true);
     }
   };
 
@@ -103,13 +99,7 @@ const Property = () => {
         {isBooked ? (
           <button onClick={handleRemoveBooking}>Ukloni</button>
         ) : (
-          <button
-            onClick={() => {
-              setShowDatePicker(true);
-            }}
-          >
-            Rezervisi
-          </button>
+          <button onClick={handleBookingClick}>Rezervisi</button>
         )}
         {startDate && endDate && (
           <div className={styles.dateSelection}>
